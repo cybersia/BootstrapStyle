@@ -1,0 +1,143 @@
+body {
+  font-family: sans-serif;
+  background-color: palegoldenrod;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-auto-rows:minmax(100px, auto); */
+  grid-gap: 1em;
+  justify-items: stretch;
+  align-items: stretch;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-auto-rows:minmax(100px, auto); */
+  grid-gap: 1em;
+  justify-items: stretch;
+  align-items: stretch;
+  max-width: 1024px;
+  margin: auto;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.box1 {
+  grid-column: 1/4;
+
+  border: 1px solid #333;
+}
+
+.Menu {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1em;
+  grid-column: 1/6;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  padding: 20px;
+  justify-items: center;
+  align-items: center;
+}
+#logo {
+  grid-column: 1/3;
+}
+
+header {
+  grid-column: 1/3;
+  background-color: lightgray;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  padding: 20px;
+}
+
+strong {
+  color: blue;
+}
+
+#Articlex {
+  grid-column: 1/3;
+  background-color: lightgray;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  padding: 20px;
+}
+
+article {
+  background-color: lightgray;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  padding: 20px;
+}
+
+aside {
+  grid-column: 3/4;
+  grid-row: 2/5;
+  background-color: lightgray;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  padding: 20px;
+}
+footer {
+  grid-column: 1/4;
+  background-color: rgb(183, 216, 134);
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  padding: 20px;
+  text-align: center;
+}
+
+#loginHeader {
+  grid-column: 1/3;
+  background-color: lightgray;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 20px;
+  padding: 60px;
+  text-transform: uppercase;
+}
+.form {
+  grid-column: 1/4;
+  background-color: lightgray;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 60px;
+  height: 200px;
+  /* margin: 30px auto; */
+  max-width: 800px;
+}
+.form input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: rgb(246, 183, 88) 1px solid;
+  border-radius: 2px;
+}
+
+.form input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
